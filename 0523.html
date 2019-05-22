@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>個人履歷</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<style>
+		* {
+			color:#BD6813;
+			font-family: "Microsoft JhengHei";
+			background-color:#353535;
+		}
+		hr{
+			background-color: #ffffff;
+			height:3px;
+		}
+
+		.btn{
+			background-color: #BD6813;
+			border: 0;
+			padding:15px 80px;
+			font-size: 28px;
+		}
+		.btn:hover {
+			background-color: #9B5610;
+		}
+
+		.activity{
+			margin: 15% 0%;
+		}
+		
+		.name{
+			font-weight: 400;
+		}
+
+		.sentence{
+			font-size: 28px;
+			margin-bottom: 10%;
+		}
+
+		.boxtext{
+			background-color: white;
+		}
+
+		.tech{
+			margin-top: 15%;
+		}
+		.container-fluid{
+			margin: 5% 0%;
+		}
+		.col-4 {
+			border: solid white 3px;
+			border-right: 0px;
+			padding-top: 40px;
+			padding-left: 50px;
+		}
+		.col-6 {
+			border: solid white 3px;
+			border-left: 0px;
+			padding-top: 10%;
+			padding-right: 50px;
+
+		}
+		.skills {
+ 			text-align: right;
+  			padding: 1%;
+  			color: white;
+  			margin:10px 0px;
+		}
+
+		.contain{
+			margin-bottom:30px;
+		}
+
+		.html {width: 60%; background-color: #BD6813;}
+		.css {width: 60%; background-color: #BD6813;}
+		.js {width: 50%; background-color: #BD6813;}
+		.c {width: 50%; background-color: #BD6813;}
+		
+		.timeline {
+		  position: relative;
+		  max-width: 70%;
+		  margin-top: 10%
+
+		}
+
+		.timeline::after {
+		  content: '';
+		  position: absolute;
+		  width: 6px;
+		  background-color: white;
+		  top: 0;
+		  bottom: 8%;
+		  left: 75%;
+
+		}
+
+		.container {
+		  padding: 10px 40px;
+		  position: relative;
+		  background-color: inherit;
+		  width: 50%;
+		}
+
+		.container::after {
+		  content: '';
+		  position: absolute;
+		  width: 25px;
+		  height: 25px;
+		  right: -13px;
+		  background-color: white;
+		  border: 4px solid #FF9F55;
+		  top: 15px;
+		  border-radius: 50%;
+		  z-index: 1;
+		}
+
+		.left {
+		  left: 0;
+		}
+
+		.right {
+		  left: 51%;
+		}
+
+		.left::before {
+		  content: " ";
+		  height: 0;
+		  position: absolute;
+		  top: 22px;
+		  width: 0;
+		  z-index: 1;
+		  right: 30px;
+		  border: medium solid white;
+		  border-width: 10px 0 10px 10px;
+		  border-color: transparent transparent transparent white;
+		}
+
+		.right::before {
+		  content: " ";
+		  height: 0;
+		  position: absolute;
+		  top: 22px;
+		  width: 0;
+		  z-index: 1;
+		  left: 30px;
+		  border: medium solid white;
+		  border-width: 10px 10px 10px 0;
+		  border-color: transparent white transparent transparent;
+		}
+
+		.right::after {
+		  left: -16px;
+		}
+
+		.content {
+		  padding: 20px 30px;
+		  background-color: white;
+		  position: relative;
+		  border-radius: 6px;
+		}
+
+		@media screen and (max-width:70%) {
+		  .timeline::after {
+		  left: 31px;
+		  }
+		  
+		  .container {
+		  width: 100%;
+		  padding-left: 70px;
+		  padding-right: 25px;
+		  }
+		  
+		  .container::before {
+		  left: 60px;
+		  border: medium solid white;
+		  border-width: 10px 10px 10px 0;
+		  border-color: transparent white transparent transparent;
+		  }
+
+		  .left::after, .right::after {
+		  left: 15px;
+		  }
+		  
+		  .right {
+		  left: 0%;
+		  }
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-1"></div>
+			<div class="col-4">
+				<h1 class="name">陳哲頎</h1><h2>中原大學資訊管理學系</h2>
+				<img src="kevin.jpg" alt=""><hr><br>
+				<p class="sentence"><i>If you trust someone, give them a chance to prove themselves.</i></p>
+				<button type="button" class="btn btn-primary">Github</button>
+				<a href="https://www.facebook.com/profile.php?id=100007033603584"><img src="https://img.icons8.com/dusk/80/000000/facebook.png"></a>
+				<a href="https://www.instagram.com/che7_1017/?hl=zh-tw"><img src="https://img.icons8.com/dusk/80/000000/instagram-new.png"></a>
+				<div class="tech">
+					<h2>專業技能</h2><hr><br>
+					<h4>HTML</h4>
+					<div class="contain">
+					  <div class="skills html">60%</div>
+					</div>
+
+					<h4>CSS</h4>
+					<div class="contain">
+					  <div class="skills css">60%</div>
+					</div>
+
+					<h4>JavaScript</h4>
+					<div class="contain">
+					  <div class="skills js">50%</div>
+					</div>
+
+					<h4>C#</h4>
+					<div class="contain">
+					  <div class="skills c">50%</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="row">
+					<div class="col-2"></div>
+					<div class="col"><h2>經歷</h2><hr><br></div>
+				</div>
+
+				 <div class="timeline">
+				  <div class="container left">
+				    <div class="content">
+				      <h3 class="boxtext">大一上學期</h3>
+				      <p class="boxtext">管理學-布拉谷社會企業</p>
+				    </div>
+				  </div>
+				  <div class="container right">
+				    <div class="content">
+				      <h3 class="boxtext">大一下學期</h3>
+				      <p class="boxtext">企業概論-木匠的家</p>
+				    </div>
+				  </div>
+				  <div class="container left">
+				    <div class="content">
+				      <h3 class="boxtext">大二上學期</h3>
+				      <p class="boxtext">網程-蛋糕玩很大(後端設計)</p>
+				    </div>
+				  </div>
+				  <div class="container right">
+				    <div class="content">
+				      <h3 class="boxtext">大二下學期</h3>
+				      <p class="boxtext">多媒體-購物商城(前端設計)</p>
+				    </div>
+				  </div>
+				</div>
+				<div class="row">
+					<div class="col-2"></div>
+					<div class="col">
+						<div class="activity">
+							<h2>社團活動經歷</h2><hr><br>
+							<h4>30th中原資管系學會活動、公關、攝影股員</h4>
+							<h4>31st中原資管系學會公關長</h4>
+							<h4>中原資管系男籃隊長</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-1"></div>
+		</div>
+	</div>
+</body>
+</html>
